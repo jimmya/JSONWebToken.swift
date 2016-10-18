@@ -96,7 +96,7 @@ open class PayloadBuilder {
       return payload["iss"] as? String
     }
     set {
-      payload["iss"] = newValue as AnyObject?
+      payload["iss"] = newValue
     }
   }
 
@@ -105,7 +105,7 @@ open class PayloadBuilder {
       return payload["aud"] as? String
     }
     set {
-      payload["aud"] = newValue as AnyObject?
+      payload["aud"] = newValue
     }
   }
 
@@ -118,7 +118,7 @@ open class PayloadBuilder {
       return nil
     }
     set {
-      payload["exp"] = newValue?.timeIntervalSince1970 as AnyObject?
+      payload["exp"] = newValue?.timeIntervalSince1970
     }
   }
 
@@ -131,7 +131,7 @@ open class PayloadBuilder {
       return nil
     }
     set {
-      payload["nbf"] = newValue?.timeIntervalSince1970 as AnyObject?
+      payload["nbf"] = newValue?.timeIntervalSince1970
     }
   }
 
@@ -144,7 +144,7 @@ open class PayloadBuilder {
       return nil
     }
     set {
-      payload["iat"] = newValue?.timeIntervalSince1970 as AnyObject?
+      payload["iat"] = newValue?.timeIntervalSince1970
     }
   }
 
